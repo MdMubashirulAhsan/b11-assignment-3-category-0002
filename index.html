@@ -3,9 +3,487 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Nature's Platter</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo-header.png">
     
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+            font-size: normal;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+      .font-poppins{
+        font-family: "Poppins", serif;
+      }
+    </style>
+    
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/e1b8da7ae2.js" crossorigin="anonymous"></script>
+    
+    <!-- daisyui and tailwind css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'a3-accent': '#179800',
+                'a3-secondary':'#EFEBE3',
+                'a3-dawat':'#115414',
+                'a3-dawat-btn':'#63B76D',
+                'a3-india':'#102861',
+                'a3-india-btn':'#2A4D97',
+                'a3-star':'#FFC107',
+
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="font-sora">
+      
+      <!-- Header Section -->
+      <header class="bg-gradient-to-t from-a3-secondary to-a3-secondary-500">
+        
+        
+        <!-- nav bar -->
+        <nav>
+          <!-- small device navbar -->
+          <div class="navbar justify-between px-5 pb-5 border-2 border-a3-accent sm:hidden">
+            <div>
+              <img src="images/logo-footer.png" alt="">
+                           
+            </div>
+
+            <div>
+              <i class="fa-solid fa-bars" style="color: #179800; font-size: 2rem;"></i>
+                           
+            </div>
+          </div>
+
+          <div class="navbar px-36 mb-10  ">
+
+            <div class="navbar-start ">
+              <img src="images/logo-header.png" alt="">
+                           
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Products</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+                
+              </ul>
+            </div>
+            <div class="navbar-end space-x-5">
+              
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <a class="btn border-a3-accent bg-a3-secondary-300 px-6 py2">Login</a>
+              <a class="btn bg-a3-accent text-white px-6 py2">Register</a>
+            </div>
+          </div>
+        </nav>
+        
+        <!-- hero section -->
+
+        <section class="hero">
+          <div class="hero min-h-screen flex flex-col ">
+            <div class="hero-content text-center">
+              <div class="max-w-auto text-black content-center">
+                <h1 class="mb-5 text-5xl font-bold">
+                  Freshness <span class="text-a3-accent">
+                  You Can <br>
+                  Count</span> On, Prices You'll Love!
+                </h1>
+                <p class="mb-5">
+                  Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+                  staples, we have got you covered every day!
+                </p>
+              </div>
+            </div>
+            <div class="w-5/12 h-auto">
+              <img src="images/hero-vegetables.png" alt="Vegetables">
+            </div>
+          </div>
+          
+          <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+          
+        
+        </section>
+      </header>
+      
+      
+      <!-- main section -->
+      <main>
+        
+        
+        
+        <!-- services section -->
+        <section class="m-20">
+          <h1 class="text-a3-accent text-4xl font-semibold pb-10">
+            Services
+          </h1>
+          <div class="flex justify-between gap-5 ">
+            <div class="card bg-a3-secondary basis-1/3">
+              <figure class="self-center size-36 mt-8 bg-white rounded-full">
+                <img
+                  src="images/service.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">24/7 Services</h2>
+                <p>Our call center help you to support your critical condition.
+  
+                </p>
+                
+              </div>
+            </div>
+            <div class="card bg-a3-secondary basis-1/3">
+              <figure class="self-center size-36 mt-8 bg-white rounded-full">
+                <img
+                  src="images/delivery.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Fast Delivery</h2>
+                <p>Our team support for a smooth transport. You can easily track your shipment.</p>
+                <!-- <div class="card-actions">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div> -->
+              </div>
+            </div>
+            <div class="card bg-a3-secondary basis-1/3">
+              <figure class="self-center size-36 mt-8 bg-white rounded-full">
+                <img
+                  src="images/healthy.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Healthy Products</h2>
+                <p>This products bring peace in your life. Lou can easily maintain healthy life</p>
+                <!-- <div class="card-actions">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          
+        </section>
+
+        <!-- popular products section -->
+        <section class="p-20 bg-a3-secondary sm:flex-row">
+          <h1 class="text-a3-accent text-4xl font-semibold pb-10">
+            Popular Products
+          </h1>
+          <div class="flex gap-8">
+            <div class="card bg-gradient-to-br from-a3-accent to-a3-accent-500 w-1/3 basis-1/3">
+              
+                
+              
+              <div class="card-body  ">
+                <h2 class="card-title text-white">30% off</h2>
+                <p>Discover a world of treats, toys and <br>
+                essentials handpicked for.
+                </p>
+                <div class="card-actions justify-start">
+                  <button class="btn bg-white px-7 py-2 ">Buy Now</button>
+                </div>
+                <div class="w-70 self-end mb-[-32px] mr-[-32px]">
+                  <img src="images/vegetable-offer.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <!-- 9 small cards -->
+            <div class=" basis-2/3 grid grid-cols-3 grid-rows-3 gap-6 sm:flex-row w-2/3 h-auto">
+              
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary ">
+                  <img
+                    src="images/potato.jpg"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body content-center p-3 m-0 w-2/3 h-auto">
+                  <i class="fa-solid fa-star " style="color: #FFC107;"> <span class="text-black">4.5</span></i>
+
+                  <h2 class="card-title">Potato 1kg</h2>
+                  <p>$25</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary">
+                  <img
+                    src="images/chili.jpeg"
+                    alt="Chili" />
+                </figure>
+                <div class="card-body content-center p-3 w-2/3 h-auto m-0">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">4.3</span></i>
+
+                  <h2 class="card-title">Chili 200gm</h2>
+                  <p>$10</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3  h-auto p-3 m-3 rounded-lg bg-a3-secondary">
+                  <img
+                    src="images/Tomato.jpg"
+                    alt="Tomato" />
+                </figure>
+                <div class="card-body content-center p-3 w-2/3 h-auto m-0">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">4.9</span></i>
+
+                  <h2 class="card-title">Tomato 1kg</h2>
+                  <p>$40</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary">
+                  <img
+                    src="images/potato.jpg"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body content-center p-3 m-0 w-2/3 h-auto">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">3.9</span></i>
+
+                  <h2 class="card-title">Potato 1kg</h2>
+                  <p>$21</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 p-3 h-auto m-3 rounded-lg bg-a3-secondary ">
+                  <img
+                    src="images/potato.jpg"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body content-center p-3 m-0 w-2/3 h-auto">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">5.0</span></i>
+
+                  <h2 class="card-title">Potato 1kg</h2>
+                  <p>$45</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 p-3 h-auto m-3 rounded-lg bg-a3-secondary ">
+                  <img
+                    src="images/strawberry.jpeg"
+                    alt="Strawberry" />
+                </figure>
+                <div class="card-body content-center p-3 w-2/3 h-auto m-0">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">4.9</span></i>
+
+                  <h2 class="card-title">Strawberry 1kg</h2>
+                  <p>$100</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary">
+                  <img
+                    src="images/chili.jpeg"
+                    alt="Chili" />
+                </figure>
+                <div class="card-body content-center p-3 h-auto w-2/3 m-0">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">4.1</span></i>
+
+                  <h2 class="card-title">Chili 1kg</h2>
+                  <p>$50</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary">
+                  <img
+                    src="images/Tomato.jpg"
+                    alt="Tomato" />
+                </figure>
+                <div class="card-body content-center p-3 h-auto w-2/3 m-0">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">4.6</span></i>
+
+                  <h2 class="card-title">Tomato 1kg</h2>
+                  <p>$30</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-white h-auto ">
+                <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary">
+                  <img
+                    src="images/strawberry.jpeg"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body content-center p-3 h-auto w-2/3">
+                  <i class="fa-solid fa-star color-yellow" style="color: #FFC107"> <span class="text-black">5.0</span></i>
+
+                  <h2 class="card-title">Strawberry 1kg</h2>
+                  <p>$70</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          
+        </section>
+
+         <!-- FAQ section -->
+         <section class="mx-20 my-20">
+          <h1 class="text-a3-accent text-4xl font-semibold pb-10">Frequently Asked Questions</h1>
+          <div class="collapse collapse-plus bg-a3-secondary">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium text-a3-accent">What are the main quality points to look for when selecting fresh vegetables?</div>
+            <div class="collapse-content">
+              <p>bright, lively color in the vegetable and look to see if the vegetable is crisp and free of soft spots</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-a3-secondary">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium text-a3-accent">How are vegetables preserved?</div>
+            <div class="collapse-content">
+              <p>Refrigerators</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-a3-secondary">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium text-a3-accent">What are the guidelines for buying fresh fruit?</div>
+            <div class="collapse-content">
+              <p>firmness to the touch, vibrant colors, and a slightly sweet (though not overpowering) scent.</p>
+            </div>
+          </div>
+         </section>
+
+         <!-- arrival & offers section -->
+         <section>
+          <h1 class="text-a3-accent text-4xl font-semibold ml-20">Arrival & Offers</h1>
+          <div class="mx-20 mt-10 mb-20 flex gap-5 text-white">
+            <div class="card card-side bg-a3-dawat w-2/3">
+            
+              <div class="card-body">
+                <div class="card-actions justify-between">
+                  <div>
+                    <img class="w-2/3" src="images/dawat-logo.png" alt="">
+                  </div>
+                  <button class="btn bg-a3-dawat-btn text-white border-none font-poppins font-normal text-2xl">Cook Exotic Dishes</button>
+                </div>
+                <h2 class="card-title font-poppins text-4xl font-medium">UP to 20% OFF</h2>
+                <!-- <p>Click the button to watch on Jetflix app.</p> -->
+                
+              </div>
+              <figure>
+                <img class="w-full"
+                  src="images/dawat-mock-up.png"
+                  alt="Dawat Brand Rice" />
+              </figure>
+            </div>
+            <div class="card card-side bg-a3-india w-auto">
+              
+              <div class="card-body">
+                <div class="card-actions justify-start">
+                  <div>
+                    <img class="w-2/3" src="images/india-gate-logo.png" alt="">
+                  </div>
+                  
+                  <button class="btn bg-a3-india-btn text-white border-none font-poppins font-normal text-2xl">World's No.1 Rice</button>
+                </div>
+                <h2 class="card-title font-poppins text-4xl font-medium">UP to 40% OFF</h2>
+                <!-- <p>Click the button to watch on Jetflix app.</p> -->
+                
+              </div>
+              <figure>
+                <img class="w-full"
+                  src="images/india-gate-mock-up.png"
+                  alt="Movie" />
+              </figure>
+            </div>
+          </div>
+          
+         </section>
+
+         <!-- get grocery & news section -->
+         <section class="">
+          <div class="card card-side mx-20 bg-a3-secondary mb-[-115px]">
+            <figure class="w-1/4 p-4">
+              <img
+                src="images/vegetable-busket.png"
+                alt="vegetable busket" />
+            </figure>
+            <div class="card-body justify-start">
+              <h2 class="card-title">Get Grocery News</h2>
+              <p>Exclusive training tips, ticks, product deals and more.</p>
+              <label class="input input-bordered flex items-center mr-40">
+                
+                <input type="email" class="grow" placeholder="Enter email" />
+              </label>
+              <div class="card-actions justify-start">
+                <button class="btn bg-a3-accent text-white">Subscribe</button>
+              </div>
+            </div>
+          </div>
+         </section>
+
+      </main> 
+
+      <!-- footer section -->
+      
+        <footer class="footer bg-a3-accent text-neutral-content p-20 space-between ">
+          <aside class="p-10 pl-[20px]">
+            <div>
+              <img src="images/logo-header.png" alt="Logo" >
+            </div>
+            
+            <p>
+              Discover a world of treats, toys, and </br> 
+              essentials handpicked for your furry </br>
+              friends
+            </p>
+          </aside>
+          <nav class="self-center  ">
+            <!-- <h6 class="footer-title">Services</h6> -->
+            <a class="link link-hover">Product</a>
+            <a class="link link-hover">Services</a>
+            <a class="link link-hover">Contact Us</a>
+            <!-- <a class="link link-hover">Advertisement</a> -->
+          </nav>
+          <nav class="justify-self-end self-center pr-10 ">
+            <h6>Follow Us</h6>
+            <div class="grid grid-flow-col gap-4">
+              <i class="fa-brands fa-facebook">
+
+              </i>
+              <i class="fa-brands fa-instagram">
+
+              </i>
+              <i class="fa-brands fa-linkedin">
+
+              </i>
+              <i class="fa-brands fa-youtube">
+
+              </i>              
+            </div>
+          </nav>
+        </footer>
+      
+
 </body>
 </html>
