@@ -75,7 +75,7 @@
             </div>
           </div>
 
-          <div class="navbar px-36 mb-10  ">
+          <div class="invisible navbar px-36 mb-10  sm:visible">
 
             <div class="navbar-start ">
               <img src="images/logo-header.png" alt="">
@@ -106,7 +106,7 @@
             <div class="hero-content text-center">
               <div class="max-w-auto text-black content-center">
                 <h1 class="mb-5 text-5xl font-bold">
-                  Freshness <span class="text-a3-accent">
+                  Freshness <span class="text-a3-accent animate-ping">
                   You Can <br>
                   Count</span> On, Prices You'll Love!
                 </h1>
@@ -116,7 +116,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-5/12 h-auto">
+            <div class="w-7/12 h-auto max-sm:w-full">
               <img src="images/hero-vegetables.png" alt="Vegetables">
             </div>
           </div>
@@ -138,7 +138,7 @@
           <h1 class="text-a3-accent text-4xl font-semibold pb-10">
             Services
           </h1>
-          <div class="flex justify-between gap-5 ">
+          <div class="  justify-between gap-5 flex max-sm:flex-col">
             <div class="card bg-a3-secondary basis-1/3">
               <figure class="self-center size-36 mt-8 bg-white rounded-full">
                 <img
@@ -164,9 +164,7 @@
               <div class="card-body items-center text-center">
                 <h2 class="card-title">Fast Delivery</h2>
                 <p>Our team support for a smooth transport. You can easily track your shipment.</p>
-                <!-- <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div> -->
+                
               </div>
             </div>
             <div class="card bg-a3-secondary basis-1/3">
@@ -179,9 +177,7 @@
               <div class="card-body items-center text-center">
                 <h2 class="card-title">Healthy Products</h2>
                 <p>This products bring peace in your life. Lou can easily maintain healthy life</p>
-                <!-- <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div> -->
+                
               </div>
             </div>
           </div>
@@ -189,12 +185,12 @@
         </section>
 
         <!-- popular products section -->
-        <section class="p-20 bg-a3-secondary sm:flex-row">
+        <section class="p-20 bg-a3-secondary ">
           <h1 class="text-a3-accent text-4xl font-semibold pb-10">
             Popular Products
           </h1>
-          <div class="flex gap-8">
-            <div class="card bg-gradient-to-br from-a3-accent to-a3-accent-500 w-1/3 basis-1/3">
+          <div class="flex gap-8 max-sm:flex-col">
+            <div class="card bg-gradient-to-br from-a3-accent to-a3-accent-500 w-1/3 basis-1/3 max-sm:w-full">
               
                 
               
@@ -213,7 +209,7 @@
             </div>
             
             <!-- 9 small cards -->
-            <div class=" basis-2/3 grid grid-cols-3 grid-rows-3 gap-6 sm:flex-row w-2/3 h-auto">
+            <div class=" basis-2/3 grid grid-cols-3 grid-rows-3 gap-6 max-sm:grid-cols-2">
               
               <div class="card card-side bg-white h-auto ">
                 <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary ">
@@ -327,7 +323,7 @@
                   
                 </div>
               </div>
-              <div class="card card-side bg-white h-auto ">
+              <div class="card card-side bg-white h-auto max-sm:hidden">
                 <figure class="w-1/3 h-auto p-3 m-3 rounded-lg bg-a3-secondary">
                   <img
                     src="images/strawberry.jpeg"
@@ -376,8 +372,8 @@
          <!-- arrival & offers section -->
          <section>
           <h1 class="text-a3-accent text-4xl font-semibold ml-20">Arrival & Offers</h1>
-          <div class="mx-20 mt-10 mb-20 flex gap-5 text-white">
-            <div class="card card-side bg-a3-dawat w-2/3">
+          <div class="mx-20 mt-10 mb-20 flex gap-5 text-white max-sm:flex-col">
+            <div class="card card-side bg-a3-dawat w-2/3 max-sm:w-full">
             
               <div class="card-body">
                 <div class="card-actions justify-between">
@@ -446,16 +442,18 @@
 
       <!-- footer section -->
       
-        <footer class="footer bg-a3-accent text-neutral-content p-20 space-between ">
-          <aside class="p-10 pl-[20px]">
+        <footer class="footer bg-a3-accent text-neutral-content p-20 space-between items end max-sm:flex-col">
+          <aside class="p-10 pl-0">
             <div>
               <img src="images/logo-header.png" alt="Logo" >
             </div>
             
             <p>
-              Discover a world of treats, toys, and </br> 
+              <span class="opacity-70">
+                Discover a world of treats, toys, and </br> 
               essentials handpicked for your furry </br>
               friends
+              </span>
             </p>
           </aside>
           <nav class="self-center  ">
@@ -465,7 +463,7 @@
             <a class="link link-hover">Contact Us</a>
             <!-- <a class="link link-hover">Advertisement</a> -->
           </nav>
-          <nav class="justify-self-end self-center pr-10 ">
+          <nav class="sm:justify-self-end sm:self-center pr-10 ">
             <h6>Follow Us</h6>
             <div class="grid grid-flow-col gap-4">
               <i class="fa-brands fa-facebook">
